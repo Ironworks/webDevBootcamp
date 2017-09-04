@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz 3</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<label for="fname">First Name:</label>
+	<input id="fname" type="text" name="firstname" placeholder="John" required>
+	<label for="sname"></label>
+	<input id="sname" name="surname" type="text" placeholder="Smith" required>
+	<div>
+		<label for="male">Male</label>
+		<input id="male" name="sex" type="radio" value="male">
+		<label for="female">Female</label>
+		<input id="female" name="sex" type="radio" value="female">
+		<label for="male">Other</label>
+		<input id="other" name="sex" type="radio" value="other">
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		<input id="email" name="email" type="email" placeholder="Your email" required=>
+		<label for="password">Password:</label>
+		<input id="password" name="password" type="password" pattern=".{5,10}"  placeholder="Your password" required title="password must be between 5-10 characters">
+	</div>
+
+	<div>
+		<label>Birthday</label>
+		<select name="day">
+			<option>Day</option>
+			<option value-"1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select name="month">
+			<option>Month</option>
+			<option value-"1">Jan</option>
+			<option value="2">Feb</option>
+			<option value="3">Mar</option>
+		</select>
+		<select name="year">
+			<option>Year</option>
+			<option value-"2001">2001</option>
+			<option value="2002">2002</option>
+			<option value="2003">2003</option>
+		</select>
+	</div>
+
+	<div>
+		<label for="tandc">I agree to the terms and conditions</label>
+		<input id="tandc" name="tandc" type="checkbox">
+	</div>
+
+	<input type="submit">
+</form>
+
+</body>
+</html>
